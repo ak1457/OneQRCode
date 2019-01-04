@@ -8,17 +8,11 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="Cache-Control" content="no-siteapp">
     <title>万能收款码</title>
-    
     <script>
-    /*
-    以下内容请用专门的 Html 编辑器(如 notepad++)进行编辑，切勿直接用记事本编辑，否则可能出现中文乱码！
-    */ 
     var setting = {
-        /* 在以下【双引号】中粘贴支付宝收款链接 */ 
         aliUrl: "HTTPS://QR.ALIPAY.COM/FKX01256OXTWIBALPPVQD4"
     }
     </script>
-    
     <style>
     * {
         margin: 0; padding: 0;
@@ -59,27 +53,22 @@
         font-size: 20px;
         margin: -2px 2px 2px 2px;
     }
-    
     #code-all>.code-title {
         background-image: url("./all.png");
     }
-    
     #code-qq {
         background-color: #54b4ef;
     }
     #code-qq>.code-title {
         background-image: url("./qq.png");
     }
-    
     #code-wechat {
         background-color: #54bc6e;
     }
     #code-wechat>.code-title { 
         background-image: url("./wx.png");
-        
     }
     </style>    
-
 </head>
 <body>
     <!-- http://sk.gtxcn.com -->
@@ -90,7 +79,6 @@
         </div>
         <div class="code-footer">扫描以上二维码向我付款</div>
     </div>
-    
     <!-- https://i.qianbao.qq.com/wallet/sqrcode.htm?m=tenpay&f=wallet&a=1&ac=116C12D542554B92EFB8C16F7EDEF5F807E54D2D357A6D27DA04F1C8F40F9B86&u=785777793&n=WGzeyu -->
     <div class="code-item" id="code-qq">
         <div class="code-title"></div>
@@ -99,7 +87,6 @@
         </div>
         <div class="code-footer">长按识别以上二维码向我付款</div>
     </div>
-    
     <!-- wxp://f2f05KoAW0vUgK6me-Q_cPi_WDsjQPRSxPhY -->
     <div class="code-item" id="code-wechat">
         <div class="code-title"></div>
@@ -122,16 +109,9 @@
         /* 其它，显示“万能码” */ 
         document.getElementById("code-all").style.display = "block";
     }
-    
-    /*****************************************
-     * url编码函数
-     * 输入参数：待编码的字符串
-     * 输出参数：编码好的
-     ****************************************/
     function urlEncode(String) {
         return encodeURIComponent(String).replace(/'/g,"%27").replace(/"/g,"%22");	
     }
     </script>
-
 </body>
 </html>
